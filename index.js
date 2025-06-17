@@ -26,6 +26,7 @@ guessBtn.addEventListener("click", () => {
 
   if (userGuess === generatedNum) {
     output.textContent = "🎉 Correct guess!";
+    output.style.color = "Green";
   } else if (userGuess > 100) {
     output.textContent = "Please enter valid number between 1 to 100.";
     output.style.color = "red";
