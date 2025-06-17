@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif\;;
+  background: linear-gradient(45deg, rgb(197, 91, 170), rgb(38, 97, 170));
+}
+#container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 44%;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgb(179, 176, 176);
+}
+.info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+#heading {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#attempts {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#output {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#para{
+    margin-bottom: 5px;
+}
+
+/* buttons  */
+
+.btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.btns > button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 10px;
+  color: white;
+}
+.btns > button:hover {
+  color: gray;
+}
+#guess {
+  background-color: green;
+}
+#reset {
+  background-color: rgb(35, 157, 238);
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  #container{
+    width: 90%;
+  }
+
+  #heading{
+    font-size: 25px;
+  }
+}
